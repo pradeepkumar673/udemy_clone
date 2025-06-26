@@ -63,6 +63,7 @@ body {
     color: white;
     border-radius: 10px;
     transition: 0.9s;
+    cursor: pointer;
 }
 
 .nav_3 i {
@@ -91,6 +92,7 @@ body {
     background-color: #9d34ec;
     color: white;
     transition: 0.9s;
+    cursor: pointer;
 }
 
 .user {
@@ -393,22 +395,27 @@ body {
     font-weight: bold;
     color: #fff;
 }
+
 .footer-logo a {
     color: #aaa;
     text-decoration: none;
 }
+
 .footer-logo img {
     width: 100px;
     height: auto;
 }
-.footer li:hover{
+
+.footer li:hover {
     text-decoration: underline;
 
 }
-.nav_3_1{
+
+.nav_3_1 {
     position: relative;
 }
-.nav_3_2{
+
+.nav_3_2 {
     position: absolute;
     display: none;
     background-color: thristle;
@@ -418,32 +425,55 @@ body {
     padding: 10px;
     border-radius: 10px;
     color: #ddd;
+    transition-delay: 1s;
 }
-.nav_3_1:hover .nav_3_2{
+
+.nav_3_1:hover .nav_3_2 {
     display: block;
     transition: 0.8s;
 }
-.nac_3_2 p{
+
+.nac_3_2 p {
     padding: 10px;
     font-size: 15px;
     white-space: nowrap;
 }
+
 .wall{
     position: relative;
     display: flex;
     flex-direction: column;
 }
-.wall_text{
-    padding : 20px;
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(l);
+    }
+}
+
+
+.wall_text {
+    padding: 20px;
     border: solid gray 1px;
     border-radius: 20px;
     width: 280px;
     position: absolute;
     top: 80px;
     left: 80px;
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0  
 
 }
-.butt{
+
+.butt {
     background-color: #892de1;
     padding: 10px;
     border-radius: 10px;
@@ -451,13 +481,15 @@ body {
     margin-top: 5px;
     border: none;
 }
-.wall_text_2{
+
+.wall_text_2 {
     display: flex;
     flex-direction: row;
     justify-content: end;
     border: none;
 }
-.butt:hover{
+
+.butt:hover {
     color: #181924;
     background-color: #ede5f9;
     transition: 0.8s;
