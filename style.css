@@ -145,20 +145,27 @@ body {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    
+
 }
 
 .card {
     width: 250px;
-    height: 350px;
+    height: 380px;
     object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: first baseline;
+    align-items: last baseline;
     padding: 10px;
     border-radius: 10px;
     gap: 10px;
     margin: 10px;
+    border: solid transparent 1px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    flex-grow: 1;
+    flex-basis: 250px;
 }
 
 .card img {
@@ -462,14 +469,22 @@ body {
     padding: 20px;
     border: solid gray 1px;
     border-radius: 20px;
-    width: 280px;
+    width: 25%;
+    height: auto;
     position: absolute;
-    top: 80px;
-    left: 80px;
+    top: 1%;
+    left: 5%;
     animation-name: zoom;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    opacity: 0  
+    opacity: 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: auto;
+    
 
 }
 
@@ -493,4 +508,18 @@ body {
     color: #181924;
     background-color: #ede5f9;
     transition: 0.8s;
+}
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+}
+@media  screen and (max-width:500px) {
+    .wall_text{
+        display: none;
+    }
+    .headings{
+        display: none;
+    }
+    
 }
